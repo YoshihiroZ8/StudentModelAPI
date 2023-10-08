@@ -1084,40 +1084,6 @@
 					"name": "Staff",
 					"item": [
 						{
-							"name": "Login",
-							"id": "f33602a3-113a-4201-837d-25c0a8b5dfeb",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": {
-										"token": ""
-									}
-								},
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "email",
-											"value": "helloworld@gmail.com",
-											"type": "text"
-										},
-										{
-											"key": "password",
-											"value": "staff123",
-											"type": "text"
-										}
-									]
-								},
-								"url": "http://127.0.0.1:8000/api/login"
-							},
-							"response": []
-						},
-						{
 							"name": "Register",
 							"id": "1bae4696-8074-4a04-8c3f-98d2c7a1cf49",
 							"protocolProfileBehavior": {
@@ -1156,6 +1122,40 @@
 							"response": []
 						},
 						{
+							"name": "Login",
+							"id": "f33602a3-113a-4201-837d-25c0a8b5dfeb",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": ""
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "helloworld@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "staff123",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://127.0.0.1:8000/api/login"
+							},
+							"response": []
+						},
+						{
 							"name": "ShowStudents",
 							"id": "89b7c0da-067f-419c-8c5d-db5938101353",
 							"protocolProfileBehavior": {
@@ -1175,7 +1175,7 @@
 							"response": []
 						},
 						{
-							"name": "Search Student",
+							"name": "SearchStudent",
 							"id": "c350a140-c14e-48b7-a8ba-f12693822274",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
