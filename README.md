@@ -2,7 +2,7 @@
 Technical Assessment from VIMIGO interview
 
 
-Darryl Hii Shan Hao 
+Name: Darryl Hii Shan Hao 
 
 Computer Science (Major: Software Engineering) Student
 
@@ -19,4 +19,7 @@ https://bold-equinox-265141.postman.co/workspace/StudentModel~6223deb4-1f23-495d
 >File import&export
 https://bold-equinox-265141.postman.co/workspace/StudentModel~6223deb4-1f23-495d-a380-d4abdca0abab/folder/30236837-60b1e479-9e6d-46d7-8312-e12552cb8a12?ctx=documentation
 
+
+Demo Video >>>
+https://drive.google.com/file/d/1a6at93pSnbVSeBXKQtIdM_0m0try5Z8I/view?usp=sharing
 
