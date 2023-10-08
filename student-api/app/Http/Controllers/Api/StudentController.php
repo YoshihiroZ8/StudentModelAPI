@@ -13,9 +13,9 @@ use App\Imports\StudentImport;
 
 
 class StudentController extends Controller
-{
+{   
+    //show filtering data from students only name & address
     public function index(){
-
         $students = Student::all();    
         if($students->count() > 0)
         {
@@ -33,6 +33,8 @@ class StudentController extends Controller
             }
     }
 
+
+    //add new student data
     public function store(Request $request){
 
         $validator = Validator::make($request->all(), [
@@ -74,6 +76,7 @@ class StudentController extends Controller
         }
     }
 
+    //show all data from students
     public function show($id){
         $students = Student::find($id);    
         if($students)
@@ -90,7 +93,7 @@ class StudentController extends Controller
         }
     }
 
-    
+    //Edit student
     public function edit($id){
         $students = Student::find($id);    
         if($students)
@@ -107,6 +110,7 @@ class StudentController extends Controller
         }
     }
 
+    //update student data function
     public function update(Request $request, int $id){
         $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:191',
@@ -148,7 +152,7 @@ class StudentController extends Controller
         }
     }
 
-
+    //delete function
     public function destroy($id){
         $student = Student::find($id);
         if($student){
@@ -167,6 +171,7 @@ class StudentController extends Controller
         }
     }
 
+    //search function by entering name or email
     public function search(Request $request){
         // Get the search query from the request
         $query = $request->input('query');
@@ -185,7 +190,8 @@ class StudentController extends Controller
         return response()->json(['data' => $results], 200);
         
     }
-
+    
+    //Import File Data into Student table
     public function import(Request $request)
     {
         $this->validate($request, [
@@ -199,6 +205,7 @@ class StudentController extends Controller
         return response()->json(['message' => 'Data imported successfully']);
     }
 
+    //Export students table data to excel file
     public function export()
     {
         return Excel::download(new StudentExport, 'students.xlsx');
