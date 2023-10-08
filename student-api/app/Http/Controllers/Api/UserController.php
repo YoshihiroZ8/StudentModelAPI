@@ -11,6 +11,8 @@ use Validator;
 class UserController extends Controller
 {
     public $successStatus = 200;
+
+    //login function for stuff
     public function userLogin(Request $request)
     {
         if(Auth::attempt(['email' => request('email'), 'password' => request('password')])){ 
@@ -26,6 +28,7 @@ class UserController extends Controller
         
     }
 
+    //register new stuff user
     public function register(Request $request) 
     { 
             $validator = Validator::make($request->all(), [ 
