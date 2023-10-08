@@ -1,5 +1,7 @@
 # StudentModelAPI
  Technical Assessment from VIMIGO interview
+Darryl Hii Shan Hao 
+Computer Science (Major: Software Engineering) Student
 
 
 Postman JSON Link
